@@ -1,6 +1,4 @@
 from selenium import webdriver
-from bs4 import BeautifulSoup
-import requests
 import time
 from tqdm import tqdm
 import pandas as pd

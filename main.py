@@ -4,7 +4,6 @@ import requests
 import time
 from tqdm import tqdm
 import pandas as pd
-import re
 
 
 
@@ -29,6 +28,7 @@ for i in tqdm(cars):
         
         trs = tbody.find_elements_by_xpath('.//tr')
         
+        #더 이상 차량 정보가 없을시 다음 차량 타입으로 넘어감
         if len(trs) == 0:
             ispage = False
             continue
